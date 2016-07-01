@@ -42,10 +42,47 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener clickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (view instanceof Button) {
-                    Toast.makeText(view.getContext(), "You Clicked the Button below views number ", Toast.LENGTH_LONG).show();
+                //if (view instanceof Button) {
+                //    Toast.makeText(view.getContext(), "You Clicked the Button below views number ", Toast.LENGTH_LONG).show();
+                switch (view.getId()) {
+                    case R.id.button1:
+                        numViews = "1 and 2";
+                        break;
+                    case R.id.button2:
+                        numViews = "3 and 4";
+                        break;
+                    case R.id.button3:
+                        numViews = "5 and 6";
+                        break;
+                    case R.id.button4:
+                        numViews = "7 and 8";
+                        break;
+                    case R.id.button5:
+                        numViews = "9 and 10";
+                        break;
+                    case R.id.button6:
+                        numViews = "11 and 12";
+                        break;
+                    case R.id.button7:
+                        numViews = "13 and 14";
+                        break;
+                    case R.id.button8:
+                        numViews = "15 and 16";
+                        break;
+                    case R.id.button9:
+                        numViews = "17 and 18";
+                        break;
+                    case R.id.button10:
+                        numViews = "19 and 20";
+                        break;
+                    default:
+                        break;
+
+
                 }
+                Toast.makeText(view.getContext(), "You Clicked the Button below views number " + numViews, Toast.LENGTH_LONG).show();
             }
+            //}
         };
 
         Button button1 = (Button) findViewById(R.id.button1);
